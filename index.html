@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway&display=swap" rel="stylesheet">
+        <title>Wheater App</title>
+        <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+    </head>
+    <body>
+        
+        <div class="paper">
+            <h1>Wheater App</h1>
+            <hr width="100%" size="1px" color="gray">
+            <div class="temp">
+                <h2 id="temp-value"></h2>
+                <h5 id="feels"></h5>
+                <h3 id="temp"></h3>
+            </div>
+            <div class="location">
+                <h2 id="location"></h2>
+                <img  id="icon"  >
+            </div>
+            <div class="other-values">
+                <h3 id="wind"></h3>
+                <h3 id="humidity"></h3>
+            </div> 
+            <div class="date">
+                <h4 id="date"></h4>
+            </div>
+        </div>
+
+        <div class="paper">
+            <h2>Search a city</h2>
+            <form class="search-city">
+                <div class="form-group">
+                    <input type="text" id="city" placeholder="City" autofocus autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <input type="submit" id="btn-city" value="CHANGE CITY">
+                </div>
+            </form>
+        </div>
+        
+        <script src="./index.js" type="module"></script>
+    </body>
+</html>
